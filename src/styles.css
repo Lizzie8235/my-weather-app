@@ -1,0 +1,93 @@
+.container {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 0 30px;
+}
+.wrapper {
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+  background-color: rgba(252, 252, 252, 0.8);
+  margin-bottom: 7px;
+}
+#backgroundVideo {
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #59057b;
+  font-weight: 400;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.forecast__items {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.forecast__item {
+  line-height: 24px;
+  display: block;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 20px;
+  transition: all 0.4s;
+  background-color: rgba(252, 252, 252, 0.8);
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  width: 19%;
+}
+.forecast__item + .forecast__item {
+  margin-left: 20px;
+}
+.forecast__item:hover {
+  transform: scale(1.07);
+}
+
+.forecast__day,
+.forecast__date {
+  font-weight: 500;
+  color: #59057b;
+}
+
+.forecast__date {
+  margin-bottom: 10px;
+  color: #0f0766;
+}
+
+.forecast__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.forecast__description {
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.forecast__description::first-letter {
+  text-transform: capitalize;
+}
+.forecast__temperature {
+  font-weight: 500;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
